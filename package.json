@@ -1,0 +1,40 @@
+{
+  "name": "@swytchio/prettier-config",
+  "version": "1.0.0",
+  "description": "A Prettier configuration for consistency in ClearTrace projects",
+  "main": "index.json",
+  "files": [
+    "index.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swytch-x/prettier-config.git"
+  },
+  "keywords": [
+    "style",
+    "prettier",
+    "standard",
+    "consistent",
+    "cleartrace"
+  ],
+  "author": "The ClearTrace Dev Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/swytch-x/prettier-config/issues"
+  },
+  "homepage": "https://github.com/swytch-x/prettier-config#readme",
+  "devDependencies": {
+    "husky": "^5.0.9",
+    "lint-staged": "^10.5.4",
+    "prettier": "2.2.1"
+  },
+  "prettier": "./index.json",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{json,md}": "prettier --write"
+  }
+}
