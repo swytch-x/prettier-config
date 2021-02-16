@@ -1,10 +1,11 @@
 {
   "name": "@swytchio/prettier-config",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Prettier configuration for consistency in ClearTrace projects",
   "main": "index.json",
   "files": [
-    "index.json"
+    "index.json",
+    "LICENSE.txt"
   ],
   "repository": {
     "type": "git",
